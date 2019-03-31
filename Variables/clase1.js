@@ -7,6 +7,8 @@ var nombre = 'Jaiden', apellido = 'Meiden';
 var edad = 28;
 edad = '28 años';
 
+//JavaScript no exige que exista un ; al final de cada linea de còdigo, salvo 
+//algunas excepciones.
 console.log('Hola ' + nombre + ' ' + apellido)
 console.log('Tengo ' + edad)
 
