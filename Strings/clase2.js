@@ -1,14 +1,14 @@
-var nombre = 'Jaiden', apellido = 'Meiden';
+var nombre = 'Jaiden', apellido = 'Meiden'
 
-var nombreEnMayusculas = nombre.toUpperCase();
-var apellidoEnMinusculas = apellido.toLowerCase();
+var nombreEnMayusculas = nombre.toUpperCase()
+var apellidoEnMinusculas = apellido.toLowerCase()
 
-var primeraLetraDelNombre = nombre.charAt(0);
-var cantidadDeLetrasDelNombre = nombre.length;
+var primeraLetraDelNombre = nombre.charAt(0)
+var cantidadDeLetrasDelNombre = nombre.length
 
 //Concateneación estandar
-var nombreCompleto1 = nombre + ' ' +apellido;
+var nombreCompleto1 = nombre + ' ' +apellido
 //interporación de texto
-var nombreCompleto2 = `${nombre} ${apellido.toUpperCase()}`;
+var nombreCompleto2 = `${nombre} ${apellido.toUpperCase()}`
 
-var str = nombre.substr(1, 2);
+var str = nombre.substr(1, 2)
