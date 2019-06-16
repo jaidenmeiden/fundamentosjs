@@ -12,6 +12,3 @@ var nombreCompleto1 = nombre + ' ' +apellido;
 var nombreCompleto2 = `${nombre} ${apellido.toUpperCase()}`;
 
 var str = nombre.substr(1, 2);
-
-var ultimaLetra = nombreCompleto1.charAt(nombreCompleto1.lenght - 1);
-console.log(ultimaLetra);
