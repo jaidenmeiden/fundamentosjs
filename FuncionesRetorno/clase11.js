@@ -18,9 +18,11 @@ var juan = {
 
 const MAYORIA_DE_EDAD = 18;
 
-function esMayorDeEdad (persona) {
+//Cuando a una variable es asignada un función es recomendable
+//colocar 'const' para evidenciar que es una función y no una variable
+const esMayorDeEdad = function (persona) {
     return persona.edad >= MAYORIA_DE_EDAD;
-}
+};
 
 function imprimirSiEsMayorDeEdad (persona) {
     if(esMayorDeEdad(persona)) {
