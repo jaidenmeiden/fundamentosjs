@@ -9,12 +9,12 @@ const onResponse = function(data) {
     console.log(`Hola yo soy de nuevo, ${data.name} y estoy en ${data.url}`)
 }
 
-function obetenerPersonaje(id) {
+function obtenerPersonaje(id) {
     peopleURL = `${API_URL}${PEOBLE_URL.replace(':id', id)}`;
     //Request
     $.get(peopleURL, opts, onResponse);
 }
 
 for(var i = 1; i <= 10; i++) {
-    obetenerPersonaje(i);
+    obtenerPersonaje(i);
 }
