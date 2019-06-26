@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo 27a - Cómo funciona el tiempo en JavaScript</title>
+  </head>
+  <body>
+    <script>
+      console.log('a');
+      //Tipo 1
+      setTimeout(function () {
+        console.log('b');
+      }, 3000);
+      //Tipo 2
+      setTimeout(() =>console.log('c'), 2000);
+      console.log('d');
+    </script>
+  </body>
+</html>

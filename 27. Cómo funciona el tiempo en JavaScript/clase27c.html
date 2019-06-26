@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ejemplo 27c - Cómo funciona el tiempo en JavaScript</title>
+  </head>
+  <body>
+    <script>
+      function addZero(i) {
+        if (i < 10) {
+          i = "0" + i;
+        }
+        return i;
+      }
+
+      function myFunction() {
+        var d = new Date();
+        var x = document.getElementById("demo");
+        var h = addZero(d.getHours());
+        var m = addZero(d.getMinutes());
+        var s = addZero(d.getSeconds());
+        var ml = addZero(d.getMilliseconds());
+        console.log(h + ":" + m + ":" + s + " " + ml);
+      }
+
+      myFunction();
+      setTimeout(function () {
+        console.log('a');
+        myFunction();
+      }, 3000);
+      for(var i = 0;i < 10000000000;i++){
+
+      }
+    </script>
+  </body>
+</html>
