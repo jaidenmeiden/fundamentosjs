@@ -17,7 +17,19 @@ function obtenerPersonaje(id) {
 }
 
 obtenerPersonaje(1)
-    .then(function (data) {
+    .then(data => {
+        console.log(`Hola yo soy de nuevo, ${data.name} y estoy en ${data.url}`);
+        return obtenerPersonaje(2);
+    })
+    .then(data => {
+        console.log(`Hola yo soy de nuevo, ${data.name} y estoy en ${data.url}`);
+        return obtenerPersonaje(3);
+    })
+    .then(data => {
+        console.log(`Hola yo soy de nuevo, ${data.name} y estoy en ${data.url}`);
+        return obtenerPersonaje(4);
+    })
+    .then(data => {
         console.log(`Hola yo soy de nuevo, ${data.name} y estoy en ${data.url}`);
     })
     .catch(function (id) {
