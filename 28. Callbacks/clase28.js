@@ -9,9 +9,11 @@ const onResponse = function(data) {
     console.log(`Hola yo soy de nuevo, ${data.name}`)
 }
 
+//Request 1
 $.get(peopleURL, opts, function (data) {
     console.log(arguments);//Muestra todos los argumentos enviados a la función
     console.log(`Hola yo soy, ${data.name}`)
 });
 
+//Request 2
 $.get(peopleURL, opts, onResponse);
