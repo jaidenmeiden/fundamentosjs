@@ -25,6 +25,7 @@ function factorialCache(n) {
         this.cache = {};//La inicializamos si no
     }
 
+    debugger
     if(this.cache[n]) {//Validamos si el calculo para el factorial, ya fue hecho previamente
         return this.cache[n];//Si sí, lo utilzamos
     }
@@ -34,9 +35,11 @@ function factorialCache(n) {
     }
 
     this.cache[n] = n * factorialCache(n-1);
+    debugger
     return this.cache[n];
 }
 
 
 //console.log(factorial(6));
 console.log(factorialCache(6));
+console.log(factorialCache(12));
